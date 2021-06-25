@@ -76,16 +76,18 @@ td{
     border:2px solid black;
     color:black;
     text-align: center;
-    font-size: 18px;
+    font-size: 10px;
 }
 table, th{
-    table-layout:fixed;
+    table-layout: fixed;
     background-color: #f2d0db;
     border-radius: 2px;
     border:2px solid black;
     text-align: center;
-    font-size: 20px;
-    color: red;
+    font-size: 12px;
+    border-radius: 2px;
+    margin-right:5px;
+    margin-left:5px;
   }
 .time {
   display: grid;

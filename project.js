@@ -58,7 +58,9 @@ class CountdownTimer extends HTMLElement {
   }
 
   onTimesUp() {
+    setTimeout(() => { alert('TIMEUP!'); }, 500);
     clearInterval(this.timerInterval);
+
   }
 
   startTimer() {
@@ -140,3 +142,15 @@ class CountdownTimer extends HTMLElement {
   }
 }
 customElements.define('countdown-timer', CountdownTimer)
+
+
+var timeleft = 10;
+var downloadTimer = setInterval(function(){
+  if(timeleft <= 0){
+    clearInterval(downloadTimer);
+    document.getElementById("countdown").innerHTML = "FINISHED";
+  } else {
+    document.getElementById("countdown").innerHTML = timeleft + " seconds remaining";
+  }
+  timeleft -= 1;
+}, 1000);

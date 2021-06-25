@@ -11,49 +11,26 @@
     <h1>Welcome TEAM D Lead!</h1><br>
     <h2>Please select your decision</h2><br><br>
     <div class="content container">
-      <h1> How many fishes you are fishing today? </h1>
-      <h4>Give your answer in 6seconds and submit</h4><br>
+      <h1> How many fishes you are fishing today Team D? </h1>
+      <h4>Give your answer in 10 seconds and submit</h4><br>
       <div class="time">
-        <countdown-timer time-limit-in-seconds=7></countdown-timer>
+        <countdown-timer time-limit-in-seconds=11></countdown-timer>
       </div>
-      <!-- <form onsubmit='displayDetails(); return false;' required> -->
+      <div id="countdown"></div><br>
       <form onsubmit='valueSender();' action="thanku1.html" method="get">
-        <label for="fish">How many fishes you are fishing today TD? </label>
-        <input type="text" id="D" placeholder="Enter 1 / 2 digit only" pattern="[1-2]" required /><br>
-      <!-- <form action="thanku.html" method="get">
-        <label for="fish">How many fishes you are fishing today? </label>
-        <select id="D">
-          <option value="1">1</option>
-          <option value="2">2</option>
-        </select> -->
-        <!-- <input type="radio" name = "ans" value="1"> 1 Fish <br><br>
-        <input type="radio" name = "ans" value="2"> 2 Fishes <br><br> -->
+        <label for="fish">Enter number of fishes: </label>
+        <input type="number" id="D1" placeholder="Enter 1 / 2 digit only" min="1" max="2" required /><br>
         <input id="submit" type="submit" name="" value="Submit">
       </form>
     </div>
     <script>
       function valueSender(){
-        var VD = document.getElementById('D').value;
-        localStorage.setItem('valueD',VD);
+        var VD1 = document.getElementById('D1').value;
+        localStorage.setItem('valueD1',VD1);
         window.location.href='thanku1.html';
-    }
+        window.location.href='Results.html';}
     </script>
-    <!-- <div class="container">
-      <table id='display'>
-        <tr>
-          <th>Team A - Number of fishes captured</th>
-          <th>Team B - Number of fishes captured</th>
-          <th>Team C - Number of fishes captured</th>
-          <th>Team D - Number of fishes captured</th>
-          <th>Team A - Profit/Loss</th>
-          <th>Team B - Profit/Loss</th>
-          <th>Team C - Profit/Loss</th>
-          <th>Team D - Profit/Loss</th>
-        </tr>
-      </table>
-    </div> -->
-
     <script src="project.js"></script>
-    <script src="table.js"></script>
+    <script src="table1.js"></script>
   </body>
 </html>

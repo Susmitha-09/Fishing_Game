@@ -2,34 +2,35 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>TA-Decision</title>
+    <title>TB1-Decision</title>
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="project.css">
   </head>
   <body class='loader'>
-    <h1>Welcome TEAM A Lead!</h1><br>
+    <h1>Welcome TEAM B Lead!</h1><br>
     <h2>Please select your decision</h2><br><br>
     <div class="content container">
-      <h1> How many fishes you are fishing today Team A? </h1>
+      <h1> How many fishes you are fishing today Team B? </h1>
       <h4>Give your answer in 10 seconds and submit</h4><br>
       <div class="time">
         <countdown-timer time-limit-in-seconds=11></countdown-timer>
       </div>
       <div id="countdown"></div><br>
-      <form onsubmit='valueSender();' action="TB1_decision.html" method="get">
+      <form onsubmit='valueSender();' action="TC4_decision.html" method="get">
         <label for="fish">Enter number of fishes: </label>
-        <input type="number" id="A1" placeholder="Enter 1 / 2 digit only" min="1" max="2" required /><br>
+        <input type="number" id="B4" placeholder="Enter 1 / 2 digit only" min="1" max="2" required /><br>
         <input id="submit" type="submit" name="" value="Submit">
       </form>
     </div>
     <script>
       function valueSender(){
-        var VA1 = document.getElementById('A1').value;
-        localStorage.setItem('valueA1',VA1);
-        window.location.href='thanku1.html';
-        window.location.href='Results.html';}
+        var VB4 = document.getElementById('B4').value;
+        localStorage.setItem('valueB4',VB4);
+        window.location.href='thanku4.html';
+        window.location.href='Results.html';
+    }
     </script>
     <script src="project.js"></script>
-    <script src="table1.js"></script>
+    <script src="table4.js"></script>
   </body>
 </html>
